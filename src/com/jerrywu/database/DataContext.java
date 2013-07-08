@@ -22,6 +22,12 @@ public abstract class DataContext implements IDataContext {
 	public abstract String getItemName(); 
 	
 	/**
+	 * 取得PK的值
+	 * @return 表格所對應的PK所屬的欄位值
+	 */
+	public abstract String getItemValue(); 
+	
+	/**
 	 * 取得FK名稱
 	 * @param type 類別
 	 * @return 欄位
