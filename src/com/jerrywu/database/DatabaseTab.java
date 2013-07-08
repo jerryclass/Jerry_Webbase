@@ -36,13 +36,23 @@ public class DatabaseTab {
 		//不寫入資料庫
 		@Target({ ElementType.FIELD })
 		@Retention(RetentionPolicy.RUNTIME)
-		public @interface nonPersistent {
+		public @interface NonPersistent {
 		}
 			
+
+		
+		
+		//主鍵資料
+		@Target({ ElementType.FIELD })
+		@Retention(RetentionPolicy.RUNTIME)
+		public @interface PrimaryKey  {
+			Class<?> value();
+		}
+	
 		//關聯資料
 		@Target({ ElementType.FIELD })
 		@Retention(RetentionPolicy.RUNTIME)
-		public @interface foreignKey  {
+		public @interface ForeignKey  {
 				Class<?> value();
 		}
 		
