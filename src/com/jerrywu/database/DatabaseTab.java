@@ -46,7 +46,7 @@ public class DatabaseTab {
 		@Target({ ElementType.FIELD })
 		@Retention(RetentionPolicy.RUNTIME)
 		public @interface PrimaryKey  {
-			Class<?> value();
+			String value();
 		}
 	
 		//關聯資料
