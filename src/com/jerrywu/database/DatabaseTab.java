@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  * 標籤類別
  *
  */
-public class AWSTab {
+public class DatabaseTab {
 
 		// 資料庫表格名稱
 		@Target({ ElementType.TYPE })
