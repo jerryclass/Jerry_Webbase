@@ -5,7 +5,7 @@ import org.json.JSONObject;
 
 /**
  * 
- * 抽象類別-資料
+ * 資料庫定義(抽象類別)
  *
  */
 public abstract class DataContext implements IDataContext {
