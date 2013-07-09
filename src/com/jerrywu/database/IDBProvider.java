@@ -176,16 +176,27 @@ public interface IDBProvider {
 		 */
 		public  <T extends DataContext> T getDataById(Class<T> c, String id) throws InstantiationException, IllegalAccessException, IOException ;
 
+		
 		/**
 		 * 將物件新增進資料庫
-		 * @param awsData 
+		 * @param data
 		 * @throws Exception
 		 */
-		public void makePersistent(DataContext awsData) throws Exception;
+		public void makePersistent(DataContext data) throws Exception;
 
+		
 		/**
 		 * 將物件從資料庫移除
+		 * @param data
+		 * @throws Exception
 		 */
-		public void deletePersistent(IDataContext awsData) throws Exception;
+		public void deletePersistent(IDataContext data) throws Exception;
 
+		/**
+		 * 建立表格
+		 * @param tableName
+		 * @param primaryKey
+		 * @throws Exception
+		 */
+		public void createTable(String tableName,String primaryKey) throws Exception;
 }

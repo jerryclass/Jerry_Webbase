@@ -204,4 +204,7 @@ public abstract class DBProvider implements IDBProvider {
 	@Override
 	public abstract void deletePersistent(IDataContext awsData) throws Exception;
 
+	
+	
+	
 }
