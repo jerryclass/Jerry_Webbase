@@ -38,10 +38,7 @@ public class DatabaseTab {
 		@Retention(RetentionPolicy.RUNTIME)
 		public @interface NonPersistent {
 		}
-			
-
-		
-		
+					
 		//主鍵資料
 		@Target({ ElementType.FIELD })
 		@Retention(RetentionPolicy.RUNTIME)
