@@ -5,7 +5,7 @@ import org.json.JSONObject;
 
 /**
  * 
- * 資料庫定義(介面)
+ * 資料庫資料(介面)
  *
  */
 public interface IDataContext {

@@ -5,7 +5,7 @@ import java.util.Vector;
 
 /**
  * 
- * 資料庫連線類別
+ * 資料庫操作類別(抽象類別)
  *
  */
 public abstract class DBProvider implements IDBProvider {
@@ -190,21 +190,32 @@ public abstract class DBProvider implements IDBProvider {
 	@Override
 	public abstract  <T extends DataContext> T getDataById(Class<T> c, String id) throws InstantiationException, IllegalAccessException, IOException ;
 	
+	
 	/**
 	 * 將物件新增進資料庫
 	 * @param awsData 
 	 * @throws Exception
 	 */
 	@Override
-	public abstract void makePersistent(DataContext awsData) throws Exception;
+	public abstract void makePersistent(DataContext data) throws Exception;
+
 
 	/**
 	 * 將物件從資料庫移除
+	 * @param data
+	 * @throws Exception
 	 */
 	@Override
-	public abstract void deletePersistent(IDataContext awsData) throws Exception;
-
+	public abstract void deletePersistent(IDataContext data) throws Exception;
 	
+	/**
+	 * 建立表格
+	 * @param tableName
+	 * @param primaryKey
+	 * @throws Exception
+	 */
+	@Override
+	public abstract void createTable(String tableName,String primaryKey) throws Exception;
 	
 	
 }

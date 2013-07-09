@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Vector;
 
 /**
- * 資料庫操作介面
+ * 資料庫操作(介面)
  */
 public interface IDBProvider {
 		
