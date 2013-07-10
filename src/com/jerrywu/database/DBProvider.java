@@ -206,7 +206,7 @@ public abstract class DBProvider implements IDBProvider {
 	 * @throws Exception
 	 */
 	@Override
-	public abstract void deletePersistent(IDataContext data) throws Exception;
+	public abstract void deletePersistent(DataContext data) throws Exception;
 	
 	/**
 	 * 建立表格
