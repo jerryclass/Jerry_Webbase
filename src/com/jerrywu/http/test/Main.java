@@ -16,8 +16,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		//建立請求Tag
 		HTTPRequestTag requestTag = new HTTPRequestTag("http://www.mis.kuas.edu.tw/",HTTPMethod.GET);
 		

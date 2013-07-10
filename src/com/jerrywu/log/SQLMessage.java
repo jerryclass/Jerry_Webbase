@@ -7,8 +7,8 @@ public class SQLMessage implements ILogMessage {
 
 	@Override
 	public void print(String message) {
-		  //String tempMessage = String.format("[SQL 訊息] %s", message);
-		  //System.out.println(tempMessage);
+		  String tempMessage = String.format("[資料庫訊息]：%s", message);
+		  System.out.println(tempMessage);
 	}
 
 }

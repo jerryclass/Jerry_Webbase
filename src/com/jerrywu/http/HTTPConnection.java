@@ -7,6 +7,8 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import com.jerrywu.log.MessageFactory;
+
 
 //基礎 HTTP 連線類別
 //Base HTTP Connection
@@ -109,7 +111,7 @@ public class HTTPConnection {
 			        	
 		}catch(Exception e)
 		{
-			System.out.println(String.format("[發生錯誤]:%s",e.toString()));
+			MessageFactory.error().print(e.toString());
 		}
 		return null;
 	}
@@ -151,7 +153,6 @@ public class HTTPConnection {
 			//設定Cookies
 			if(requestTag.getCookies() != null)
 			{
-				System.out.print(requestTag.getCookies());
 				urlConn.setRequestProperty("Cookie", requestTag.getCookies());
 			}
 			

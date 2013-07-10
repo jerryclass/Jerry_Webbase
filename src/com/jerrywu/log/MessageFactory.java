@@ -15,4 +15,9 @@ public class MessageFactory {
 		{
 				return new SystemMessage();
 		}
+		
+		public static ILogMessage error()
+		{
+				return new SystemMessage();
+		}
 }
