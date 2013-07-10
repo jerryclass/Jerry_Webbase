@@ -190,7 +190,7 @@ public interface IDBProvider {
 		 * @param data
 		 * @throws Exception
 		 */
-		public void deletePersistent(IDataContext data) throws Exception;
+		public void deletePersistent(DataContext data) throws Exception;
 
 		/**
 		 * 建立表格
