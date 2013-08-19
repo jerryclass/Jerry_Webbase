@@ -207,7 +207,6 @@ public class HTTPConnection {
         	String lines = "";
         	while ((lines=reader.readLine()) != null){
         		sbLines.append(lines);
-        		System.out.println(lines);
         	}
         	
         	System.out.println("ABC");
