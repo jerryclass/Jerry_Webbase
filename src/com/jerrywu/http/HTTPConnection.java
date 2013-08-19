@@ -21,7 +21,7 @@ public class HTTPConnection {
 		urlConn.setRequestProperty("Cache-Control", "max-age=0");
 		urlConn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
 		urlConn.setRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31");
-		urlConn.setRequestProperty("Accept-Encoding", "gzip,deflate,sdch");
+		//urlConn.setRequestProperty("Accept-Encoding", "gzip,deflate,sdch");
 		urlConn.setRequestProperty("Accept-Language", "zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4");
 		urlConn.setRequestProperty("Accept-Charset","Big5,utf-8;q=0.7,*;q=0.3");
 	}
@@ -207,7 +207,11 @@ public class HTTPConnection {
         	String lines = "";
         	while ((lines=reader.readLine()) != null){
         		sbLines.append(lines);
+        		System.out.println(lines);
         	}
+        	
+        	System.out.println("ABC");
+        	
         	
         	HTTPResponseTag response = new HTTPResponseTag(null,setCookies,httpCode,sbLines.toString());
 			
