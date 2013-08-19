@@ -208,9 +208,7 @@ public class HTTPConnection {
         	while ((lines=reader.readLine()) != null){
         		sbLines.append(lines);
         	}
-        	
-        	System.out.println("ABC");
-        	
+
         	
         	HTTPResponseTag response = new HTTPResponseTag(null,setCookies,httpCode,sbLines.toString());
 			
